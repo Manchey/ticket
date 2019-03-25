@@ -1,0 +1,86 @@
+.intro {
+  margin: 6px;
+  text-align: center;
+}
+
+.hirainMap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.boxS{
+  position: absolute;
+  height: 88rpx;
+  width: 100%;
+  top: 0rpx;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  background: #fff;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  margin-top: 0rpx;
+  box-sizing: border-box
+}
+
+.boxStime1{
+  position: relative;
+  align-items: center;
+  margin-left: 50rpx
+}
+
+.boxStime2{
+  position: relative;
+  align-items: center;
+  margin-left: 200rpx
+}
+
+.boxP{
+  position: absolute;
+  height: 88rpx;
+  left: 10%;
+  right: 10%;
+  bottom:10%;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  background: #fff;
+  box-shadow:3px 5px 10px #a7a7a7; 
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column
+}
+
+.boxMy{
+  position: absolute;
+  height: 88rpx;
+  width: 88rpx;
+  top: 70%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  background: #fff;
+  box-shadow:3px 5px 10px #a7a7a7; 
+  box-sizing: border-box;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column
+}
+
+.hoverR{
+  background-color: gray;
+}
+
+.weui-btn{margin-top:15px}
+.weui-btn:first-child{margin-top:0}
+.weui-btn-area{margin:1.17647059em 15px .3em}
+.weui-msg__opr-area{margin:1.17647059em 15px .3em;bottom: 10%}

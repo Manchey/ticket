@@ -1,0 +1,38 @@
+<!--pages/purchase.wxml-->
+<view class="page">
+
+  <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">请选择乘车信息</view>
+
+  <view class="page__hd">
+    <view class="page__title">车票预订</view>
+  </view>
+
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/starting/starting" redirect class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">{{address}}</view>
+      </navigator>
+      <navigator url="/pages/destination/destination" class="weui-cell weui-cell_access" redirect hover-class="weui-cell_active">
+        <input class="weui-cell__bd" type="text" value="{{destination}}" placeholder="你要去哪儿" placeholder-color="#ccccccc" focus="{{false}}"/>
+      </navigator>
+    </view>
+  </view>
+
+
+
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <picker class="weui-btn" mode ="date" bindchange="bindDateChange" value="{{date}}" start="2019-03-20" end="2019-12-31" >
+        <button type="default">{{date}}</button>
+      </picker>
+      <picker class="weui-btn" bindchange="bindTimeChange" value="{{index}}" range="{{timeList}}">
+        <button type="default">{{time}}</button>
+      </picker>
+    </view>
+  </view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="toPurchase2">确定</button>
+  </view>
+
+</view>

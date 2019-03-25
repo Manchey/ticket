@@ -1,0 +1,27 @@
+<!--pages/starting/starting.wxml-->
+ <view class="container">
+ <map class="didiMap" id="didiMap"
+   latitude="{{latitude}}"
+    longitude="{{longitude}}"
+     scale="{{scale}}"
+      bindregionchange="bindregionchange"
+       polyline="{{polyline}}" 
+       markers="{{markers}}"
+        controls="{{controls}}" 
+    bindmarkertap="bindmarkertap"  
+    bindcontroltap="controltap" 
+    show-location>
+  <cover-view class="address">
+    <cover-image class="greenDot" src="/assets/images/position.png"></cover-image>
+    
+    <cover-view class="address-desc">
+      <cover-view class="blur">{{bluraddress}}</cover-view>
+      <cover-view class="detailed"> {{address}}</cover-view> 
+    </cover-view>
+    <cover-view class="address-btn" bindtap="toPurchase">
+      确定
+    </cover-view>
+  </cover-view>
+
+</map>
+</view>

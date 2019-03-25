@@ -1,0 +1,20 @@
+<!--pages/destination/destination.wxml-->
+<view class="page__hd">
+  <input class="weui-cell__bd" type="text" value="{{value}}" placeholder="你要去哪儿" placeholder-color="#ccccccc" focus="{{false}}" bindinput="searchInputend"/>
+</view>
+
+<view class="addressList">
+  <scroll-view  scroll-with-animation="{{true}}" >
+    <view wx:if="{{!value==''}}" class="destination" wx:for="{{address}}" data-destination="{{item.title}}" data-end="{{item.address}}" bindtap="toIndex" wx:key="{{item.id}}">
+            <view class="destination-content">
+                <view class="content-image">
+                  <image src="../../assets/images/position.png"></image>
+                </view>
+                <view class="content">
+                    <text class="content-name">{{item.title}}</text>
+                <text class="content-detail">{{item.address}}</text>
+                </view>
+            </view> 
+    </view>
+  </scroll-view>
+</view>

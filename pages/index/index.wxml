@@ -1,0 +1,16 @@
+<view class="page">
+  <map class="hirainMap" id="myMap" markers="{{markers}}"
+    latitude="{{latitude}}" longitude="{{longitude}}" show-location 
+    controls="{{controls}}" bindcontroltap="controltap"
+    polyline="{{polyline}}">
+
+    <cover-view class="boxMy" hover-class="hoverR" bindtap="toMy">
+      <cover-image style="width: 50rpx; height: 50rpx" src="../../assets/images/ticket.png"/>
+    </cover-view>
+
+    <cover-view class="boxP" hover-class="hoverR" bindtap="toPurchase">
+      点击预定行程
+    </cover-view>
+  </map>
+</view>
+

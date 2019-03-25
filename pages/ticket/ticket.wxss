@@ -1,0 +1,21 @@
+/* pages/ticket/ticket.wxss */
+
+.page__ticketQRcode{
+  background: rgb(200,200,200);
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 150rpx;
+  height: 400rpx;
+  padding: 40px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.page__hd {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

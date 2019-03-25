@@ -1,0 +1,4 @@
+/* pages/purchase/purchase2/purchase3.wxss */
+page{
+    background-color: #FFFFFF;
+}

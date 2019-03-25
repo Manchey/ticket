@@ -1,0 +1,37 @@
+<!--pages/ticket/ticket.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <cover-image wx:if="{{ticket_route}}" style="width: 650rpx;height:650rpx"  src="../../assets/images/QRcode.png"/>
+    <view wx:if="{{!ticket_route}}">未购买车票</view>
+  </view>
+
+  <view class="page__bd">
+      <view class="weui-form-preview">
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">日期</view>
+                <view class="weui-form-preview__value">{{ticket_date}}</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">路线</view>
+                <view class="weui-form-preview__value">{{ticket_route}}</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">班次</view>
+                <view class="weui-form-preview__value">{{ticket_time}}</view>
+            </view>
+
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">座位</view>
+                <view class="weui-form-preview__value">{{ticket_seat}}</view>
+            </view>
+        </view>
+      </view>
+  </view>
+
+  <view class="weui-msg__opr-area">
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="toIndex">返回主页</button>
+    </view>
+  </view>
+</view>

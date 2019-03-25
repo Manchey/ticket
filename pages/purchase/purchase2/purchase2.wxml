@@ -1,0 +1,28 @@
+<!--pages/purchase/purchase2/purchase2.wxml-->
+<view class="page">
+
+
+  <view class="page__hd">
+    <view class="page__title">选择座位</view>
+    <view class="page__desc">路线: {{route}} </view>
+    <view class="page__desc">日期 : {{date}} </view>
+    <view class="page__desc">班次 : {{time}}  </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <radio-group bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+        <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+        <view class="weui-cell__bd">{{item.name}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+        </view>
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="toIndex">确定</button>
+  </view>
+</view>
