@@ -38,10 +38,23 @@ Page({
       key: '464BZ-WJZ3U-RFAVT-4BOJI-FV773-TDBD4'
     });
     this.mapCtx = wx.createMapContext('myMap')
+    
   },
-  
 
   onShow: function(){
+    wx.request({
+      url: 'http://127.0.0.1:5000/index/',
+      data: {
+        goodsname: JSON.stringify('myFirstTry')  //将数据格式转为JSON
+      },
+      method: "POST",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        console.log(res.data);
+      }
+    });
     var _this = this;
     if (app.globalData.ticket_route) {
       console.log('有ticket', app.globalData.strLatitude + ',' + app.globalData.strLongitude)
