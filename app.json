@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+
     "pages/index/index",
     "pages/purchase/purchase",
     "pages/starting/starting",
@@ -10,6 +10,7 @@
     "pages/destination/destination"
     
   ],
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "Hirain车辆预约",
